@@ -4,7 +4,7 @@
 #SBATCH --error=slurm-%j.err
 #SBATCH --account=pi-amurugan
 #SBATCH --partition=broadwl
-#SBATCH --time=00:04:00
+#SBATCH --time=00:45:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 

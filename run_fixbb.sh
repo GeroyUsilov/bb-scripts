@@ -31,6 +31,7 @@ fixbb_exe="/software/rosetta-2017.08.59291-el7-x86_64/main/source/bin/fixbb.stat
 $fixbb_exe \
     -s $input_pdb \
     -resfile $resfile \
+    -packing:repack_only
     -ex1 \
     -ex2 \
     -use_input_sc \
