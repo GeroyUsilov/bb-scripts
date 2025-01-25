@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Make run_fixedbb.sh executable
-chmod u+x run_fixedbb.sh
+# Make run_fixbb.sh executable
+chmod u+x run_fixbb.sh
 
 # Check if directories exist
 if [ ! -d "pdb_files" ]; then
