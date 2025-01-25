@@ -11,6 +11,7 @@
 
 # The folder to process is passed as an argument
 # The folder to process is passed as an argument
+module load amber
 folder_path=$1
 
 if [ -z "$folder_path" ]; then
