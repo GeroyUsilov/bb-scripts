@@ -3,7 +3,7 @@
 #SBATCH --output=fixedbb_${1}_${2}.out
 #SBATCH --error=fixedbb_${1}_${2}.err
 #SBATCH --account=pi-amurugan
-#SBATCH --partition=caslake
+#SBATCH --partition=broadwl
 #SBATCH --time=00:04:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
