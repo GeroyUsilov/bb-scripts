@@ -21,11 +21,11 @@ if [ ! -f "$resfile" ]; then
     exit 1
 fi
 
-# Path to Rosetta database (you'll need to modify this)
-rosetta_db="/path/to/rosetta/main/database"
+# Path to Rosetta database 
+rosetta_db="/software/rosetta-2017.08.59291-el7-x86_64/main/database"
 
-# Path to Rosetta binary (you'll need to modify this)
-fixbb_exe="/path/to/rosetta/main/source/bin/fixbb.default.linuxgccrelease"
+# Path to Rosetta binary 
+fixbb_exe="/software/rosetta-2017.08.59291-el7-x86_64/main/source/bin/fixbb.static.linuxgccrelease"
 
 # Run fixbb
 $fixbb_exe \
@@ -39,3 +39,4 @@ $fixbb_exe \
     -minimize_sidechains \
     -database $rosetta_db \
     -overwrite
+    -out:prefix $(echo $resfile | cut -d. -f1)_

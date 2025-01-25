@@ -1,14 +1,15 @@
 #!/bin/bash
-#SBATCH --job-name=fixbb
+#SBATCH --job-name=fixedbb_${1}_${2}
+#SBATCH --output=fixedbb_${1}_${2}.out
+#SBATCH --error=fixedbb_${1}_${2}.err
+#SBATCH --account=pi-amurugan
+#SBATCH --partition=caslake
+#SBATCH --time=00:04:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=1
-#SBATCH --mem=4G
-#SBATCH --time=2:00:00
-#SBATCH --output=fixbb_%j.out
-#SBATCH --error=fixbb_%j.err
+#SBATCH --mail-type= None  # Email notification options: ALL, BEGIN, END, FAIL, ALL, NONE
 
-# Load required modules (modify as needed for your HPC)
+# Load required modules 
 module load rosetta
 
 # Input PDB file and resfile
