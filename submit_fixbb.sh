@@ -7,7 +7,7 @@
 #SBATCH --time=00:04:00
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --mail-type= None  # Email notification options: ALL, BEGIN, END, FAIL, ALL, NONE
+
 
 # Load required modules 
 module load rosetta
