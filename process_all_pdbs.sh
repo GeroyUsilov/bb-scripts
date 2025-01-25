@@ -35,6 +35,6 @@ date > "${folder_name}_energy_summary.txt"
 
 for pdb in *.pdb; do
     if [ -f "$pdb" ]; then
-        /path/to/calc_energy.sh "$pdb" 2>&1 | tee -a "${folder_name}_energy_summary.txt"
+        ../calc_energy.sh "$pdb" 2>&1 | tee -a "${folder_name}_energy_summary.txt"
     fi
 done
