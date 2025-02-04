@@ -8,9 +8,8 @@ error_exit() {
     exit 1
 }
 
-# Setup environment
-export PATH="/software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/bin:$PATH"
-source /software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/miniconda/bin/activate base  # Changed this line
+# Setup Amber environment using the provided setup script
+source /software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/amber.sh
 
 # Function to check if commands exist
 check_dependencies() {
