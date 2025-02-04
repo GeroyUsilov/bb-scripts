@@ -8,8 +8,11 @@ error_exit() {
     echo "ERROR: $1" >&2
     exit 1
 }
+# Setup environment first
 export PATH="/software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/bin:$PATH"
+source /software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/miniconda/bin/activate
 
+# Then define and run dependencies check
 # Function to check if commands exist
 check_dependencies() {
     local cmds=("pdb4amber" "tleap" "sander")
