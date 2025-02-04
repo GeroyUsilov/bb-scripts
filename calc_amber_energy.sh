@@ -39,11 +39,11 @@ check_dependencies
 timestamp=$(date +%Y%m%d_%H%M%S)
 work_dir="amber_calc_${timestamp}"
 mkdir -p "$work_dir"
+
+# Copy file and get base name for processing
+base_name=$(basename "$pdb_file")
 cp "$pdb_file" "$work_dir/"
 cd "$work_dir"
-
-# Base name for output files
-base_name=$(basename "$pdb_file" .pdb)
 
 echo "Processing PDB file..."
 
