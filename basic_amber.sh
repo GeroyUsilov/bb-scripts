@@ -12,6 +12,7 @@
 # The folder to process is passed as an argument
 # The folder to process is passed as an argument
 module load amber
+module load python/2.7
 pdb_file=$1
 
 
