@@ -8,9 +8,20 @@ error_exit() {
     echo "ERROR: $1" >&2
     exit 1
 }
-# Setup environment first
+# Check input first
+# Input PDB file
+pdb_file=$1
+if [ -z "$pdb_file" ]; then
+    error_exit "Usage: $0 <pdb_file>"
+fi
+if [ ! -f "$pdb_file" ]; then
+    error_exit "Input file $pdb_file does not exist"
+fi
+
+# Setup environment
 export PATH="/software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/bin:$PATH"
 source /software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/miniconda/bin/activate
+
 
 # Then define and run dependencies check
 # Function to check if commands exist
@@ -26,15 +37,7 @@ check_dependencies() {
 # Check dependencies
 check_dependencies
 
-# Input PDB file
-pdb_file=$1
-if [ -z "$pdb_file" ]; then
-    error_exit "Usage: $0 <pdb_file>"
-fi
 
-if [ ! -f "$pdb_file" ]; then
-    error_exit "Input file $pdb_file does not exist"
-fi
 
 # Create working directory
 timestamp=$(date +%Y%m%d_%H%M%S)
