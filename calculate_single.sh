@@ -74,18 +74,18 @@ echo "Running sander..." | tee -a "$log_file"
 cat > "${output_prefix}_min.in" << EOF
 Single point energy calculation
 &cntrl
-  imin=1,            ! Perform minimization
-  ntx=1,             ! Read coordinates but not velocities
-  irest=0,           ! No restart
-  maxcyc=0,          ! No minimization steps (single point)
-  ncyc=0,            ! No steepest descent steps
-  ntb=0,             ! No periodic boundary
-  igb=0,             ! No implicit solvent
-  cut=999.0,         ! Essentially infinite cutoff
-  nsnb=99999,        ! Update nonbonded list as infrequently as possible
-  ntpr=1,            ! Print every step
-  ntxo=1,            ! ASCII format for final coordinates
-  ntpo=1,            ! ASCII format for final velocities
+  imin=1,
+  ntx=1,
+  irest=0,
+  maxcyc=0,
+  ncyc=0,
+  ntb=0,
+  igb=0,
+  cut=999.0,
+  nsnb=99999,
+  ntpr=1,
+  ntxo=1,
+  ntpo=1
 /
 EOF
 
