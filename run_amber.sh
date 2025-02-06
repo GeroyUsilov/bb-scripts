@@ -9,6 +9,10 @@
 module load amber
 module load python_ucs4/2.7.13+gcc-6.2
 
+
+# Setup Amber environment
+source /software/amber-20-el7-x86_64+intelmpi-2017.up4+intel-17.0/amber.sh
+
 # Check arguments
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <directory> <pdb_file>"
