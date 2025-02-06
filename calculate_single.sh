@@ -12,15 +12,16 @@ if [ $# -ne 2 ]; then
     error_exit "Usage: $0 <directory_path> <pdb_filename>"
 fi
 
-directory_path="$1"
+# Convert to absolute paths
+directory_path=$(realpath "$1")
 pdb_filename="$2"
+pdb_path="${directory_path}/${pdb_filename}"
 
 # Validate inputs
 if [ ! -d "$directory_path" ]; then
     error_exit "Directory $directory_path does not exist"
 fi
 
-pdb_path="${directory_path}/${pdb_filename}"
 if [ ! -f "$pdb_path" ]; then
     error_exit "PDB file $pdb_path does not exist"
 fi
