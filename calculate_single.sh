@@ -23,7 +23,7 @@ fi
 pdb_path="${directory_path}/${pdb_filename}"
 if [ ! -f "$pdb_path" ]; then
     error_exit "PDB file $pdb_path does not exist"
-
+fi
 
 # Extract base names
 dir_name=$(basename "$directory_path")
