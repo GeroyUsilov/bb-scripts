@@ -12,7 +12,6 @@
 # The folder to process is passed as an argument
 # The folder to process is passed as an argument
 module load amber
-module load python_ucs4/2.7.13+gcc-6.2 
 pdb_file=$1
 
 
