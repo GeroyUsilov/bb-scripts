@@ -90,8 +90,8 @@ sander -O -i "${output_prefix}_min.in" -o "${output_prefix}_energy.out" \
 }
 
 # Extract energy and save to summary
-energy=$(grep "FINAL" "${output_prefix}_energy.out" | tail -n 1)
-echo "${pdb_base}: $energy" > "${output_prefix}_energy_summary.txt"
+energy=$(grep -A1 "NSTEP       ENERGY          RMS" "${output_prefix}_energy.out" | tail -n 1 | awk '{print $2}')
+echo "${pdb_base}: ${energy} kcal/mol" > "${output_prefix}_energy_summary.txt"
 
 echo "----------------------------------------" >> "$log_file"
 echo "Calculation completed at: $(date)" >> "$log_file"
