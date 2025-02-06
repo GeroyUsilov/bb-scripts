@@ -23,25 +23,25 @@ fi
 pdb_path="${directory_path}/${pdb_filename}"
 if [ ! -f "$pdb_path" ]; then
     error_exit "PDB file $pdb_path does not exist"
-fi
+}
 
 # Extract base names
 dir_name=$(basename "$directory_path")
 pdb_base=$(basename "$pdb_filename" .pdb)
 output_prefix="${dir_name}_${pdb_base}"
 
-# Create working directory
+# Create working directory with parents if needed
 work_dir="${directory_path}/${output_prefix}_amber"
 mkdir -p "$work_dir"
 
+# Ensure we're in working directory before any operations
+cd "$work_dir" || error_exit "Failed to change to working directory"
+
 # Setup log file
-log_file="${work_dir}/${output_prefix}_calculation.log"
+log_file="${output_prefix}_calculation.log"
 echo "AMBER Energy Calculation - $(date)" > "$log_file"
 echo "Processing: $pdb_path" >> "$log_file"
 echo "----------------------------------------" >> "$log_file"
-
-# Change to working directory
-cd "$work_dir"
 
 # Run pdb4amber
 echo "Running pdb4amber..." | tee -a "$log_file"
