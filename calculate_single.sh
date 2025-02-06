@@ -73,10 +73,20 @@ tleap -f "${output_prefix}_leap.in" >> "$log_file" 2>&1 || {
 echo "Running sander..." | tee -a "$log_file"
 cat > "${output_prefix}_min.in" << EOF
 Single point energy calculation
- &cntrl
-   imin=5, ntb=0, maxcyc=0, cut=999.0,
-   ntpr=1, ntwx=0, ntwe=0, ntwr=0
- /
+&cntrl
+  imin=1,            ! Perform minimization
+  ntx=1,             ! Read coordinates but not velocities
+  irest=0,           ! No restart
+  maxcyc=0,          ! No minimization steps (single point)
+  ncyc=0,            ! No steepest descent steps
+  ntb=0,             ! No periodic boundary
+  igb=0,             ! No implicit solvent
+  cut=999.0,         ! Essentially infinite cutoff
+  nsnb=99999,        ! Update nonbonded list as infrequently as possible
+  ntpr=1,            ! Print every step
+  ntxo=1,            ! ASCII format for final coordinates
+  ntpo=1,            ! ASCII format for final velocities
+/
 EOF
 
 sander -O -i "${output_prefix}_min.in" -o "${output_prefix}_energy.out" \
