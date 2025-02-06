@@ -44,9 +44,9 @@ echo "AMBER Energy Calculation - $(date)" > "$log_file"
 echo "Processing: $pdb_path" >> "$log_file"
 echo "----------------------------------------" >> "$log_file"
 
-# Run pdb4amber
+# Run pdb4amber with -y flag to add missing atom types
 echo "Running pdb4amber..." | tee -a "$log_file"
-pdb4amber -i "$pdb_path" -o "${output_prefix}_processed.pdb" >> "$log_file" 2>&1 || {
+pdb4amber -i "$pdb_path" -o "${output_prefix}_processed.pdb" -y >> "$log_file" 2>&1 || {
     error_exit "pdb4amber failed on $pdb_filename"
 }
 
@@ -55,7 +55,10 @@ echo "Running tleap..." | tee -a "$log_file"
 cat > "${output_prefix}_leap.in" << EOF
 source leaprc.protein.ff14SB
 source leaprc.water.tip3p
+set default PBradii mbondi2
 mol = loadpdb ${output_prefix}_processed.pdb
+addions mol Na+ 0
+addions mol Cl- 0
 check mol
 saveamberparm mol ${output_prefix}.prmtop ${output_prefix}.inpcrd
 savepdb mol ${output_prefix}_final.pdb
