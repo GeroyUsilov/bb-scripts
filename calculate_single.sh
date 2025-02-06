@@ -74,18 +74,13 @@ echo "Running sander..." | tee -a "$log_file"
 cat > "${output_prefix}_min.in" << EOF
 Single point energy calculation
 &cntrl
-  imin=1,
-  ntx=1,
-  irest=0,
-  maxcyc=0,
-  ncyc=0,
-  ntb=0,
-  igb=0,
-  cut=999.0,
-  nsnb=99999,
-  ntpr=1,
-  ntxo=1,
-  ntpo=1
+  imin=1
+  ntx=1
+  maxcyc=0
+  ncyc=0
+  ntb=0
+  cut=999.0
+  ntpr=1
 /
 EOF
 
