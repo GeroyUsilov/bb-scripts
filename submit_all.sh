@@ -13,6 +13,6 @@ for pdb in "$directory"/*.pdb; do
     if [ -f "$pdb" ]; then
         pdb_name=$(basename "$pdb")
         echo "Submitting job for $pdb_name"
-        sbatch run_amber.slurm "$directory" "$pdb_name"
+        sbatch ./run_amber.sh "$directory" "$pdb_name"
     fi
 done
