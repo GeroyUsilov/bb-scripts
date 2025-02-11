@@ -1,0 +1,191 @@
+filename,energy
+resfile.txt,NATAA
+energy_summary.txt,Tue Feb  4 02:01:37 CST 2025
+fixedbb_2kdl_GA95_output/GA95.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0004_amber/fixedbb_2kdl_GA95_output_2kdl_0004_energy_summary.txt,2kdl_0004: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0004_amber/fixedbb_2kdl_GA95_output_2kdl_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0010_amber/fixedbb_2kdl_GA95_output_2kdl_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0010_amber/fixedbb_2kdl_GA95_output_2kdl_0010_energy_summary.txt,2kdl_0010: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0001_amber/fixedbb_2kdl_GA95_output_2kdl_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0001_amber/fixedbb_2kdl_GA95_output_2kdl_0001_energy_summary.txt,2kdl_0001: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0008_amber/fixedbb_2kdl_GA95_output_2kdl_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0008_amber/fixedbb_2kdl_GA95_output_2kdl_0008_energy_summary.txt,2kdl_0008: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_amber/fixedbb_2kdl_GA95_output_2kdl_energy_summary.txt,2kdl: 1.1773E+03 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_amber/fixedbb_2kdl_GA95_output_2kdl_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0009_amber/fixedbb_2kdl_GA95_output_2kdl_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0009_amber/fixedbb_2kdl_GA95_output_2kdl_0009_energy_summary.txt,2kdl_0009: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0005_amber/fixedbb_2kdl_GA95_output_2kdl_0005_energy_summary.txt,2kdl_0005: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0005_amber/fixedbb_2kdl_GA95_output_2kdl_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0003_amber/fixedbb_2kdl_GA95_output_2kdl_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0003_amber/fixedbb_2kdl_GA95_output_2kdl_0003_energy_summary.txt,2kdl_0003: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0002_amber/fixedbb_2kdl_GA95_output_2kdl_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0002_amber/fixedbb_2kdl_GA95_output_2kdl_0002_energy_summary.txt,2kdl_0002: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0006_amber/fixedbb_2kdl_GA95_output_2kdl_0006_energy_summary.txt,2kdl_0006: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0006_amber/fixedbb_2kdl_GA95_output_2kdl_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0007_amber/fixedbb_2kdl_GA95_output_2kdl_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA95_output/fixedbb_2kdl_GA95_output_2kdl_0007_amber/fixedbb_2kdl_GA95_output_2kdl_0007_energy_summary.txt,2kdl_0007: 1.5274E+02 kcal/mol
+fixedbb_2kdl_GA77_output/GA77.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0009_amber/fixedbb_2kdl_GA77_output_2kdl_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0009_amber/fixedbb_2kdl_GA77_output_2kdl_0009_energy_summary.txt,2kdl_0009: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0010_amber/fixedbb_2kdl_GA77_output_2kdl_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0010_amber/fixedbb_2kdl_GA77_output_2kdl_0010_energy_summary.txt,2kdl_0010: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_amber/fixedbb_2kdl_GA77_output_2kdl_energy_summary.txt,2kdl: 1.1773E+03 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_amber/fixedbb_2kdl_GA77_output_2kdl_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0003_amber/fixedbb_2kdl_GA77_output_2kdl_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0003_amber/fixedbb_2kdl_GA77_output_2kdl_0003_energy_summary.txt,2kdl_0003: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0008_amber/fixedbb_2kdl_GA77_output_2kdl_0008_energy_summary.txt,2kdl_0008: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0008_amber/fixedbb_2kdl_GA77_output_2kdl_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0007_amber/fixedbb_2kdl_GA77_output_2kdl_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0007_amber/fixedbb_2kdl_GA77_output_2kdl_0007_energy_summary.txt,2kdl_0007: 1.5090E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0005_amber/fixedbb_2kdl_GA77_output_2kdl_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0005_amber/fixedbb_2kdl_GA77_output_2kdl_0005_energy_summary.txt,2kdl_0005: 1.5090E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0004_amber/fixedbb_2kdl_GA77_output_2kdl_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0004_amber/fixedbb_2kdl_GA77_output_2kdl_0004_energy_summary.txt,2kdl_0004: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0006_amber/fixedbb_2kdl_GA77_output_2kdl_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0006_amber/fixedbb_2kdl_GA77_output_2kdl_0006_energy_summary.txt,2kdl_0006: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0002_amber/fixedbb_2kdl_GA77_output_2kdl_0002_energy_summary.txt,2kdl_0002: 1.1350E+02 kcal/mol
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0002_amber/fixedbb_2kdl_GA77_output_2kdl_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0001_amber/fixedbb_2kdl_GA77_output_2kdl_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GA77_output/fixedbb_2kdl_GA77_output_2kdl_0001_amber/fixedbb_2kdl_GA77_output_2kdl_0001_energy_summary.txt,2kdl_0001: 1.5090E+02 kcal/mol
+fixedbb_2kdm_GB77_output/GB77.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0001_amber/fixedbb_2kdm_GB77_output_2kdm_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0001_amber/fixedbb_2kdm_GB77_output_2kdm_0001_energy_summary.txt,2kdm_0001: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0005_amber/fixedbb_2kdm_GB77_output_2kdm_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0005_amber/fixedbb_2kdm_GB77_output_2kdm_0005_energy_summary.txt,2kdm_0005: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0006_amber/fixedbb_2kdm_GB77_output_2kdm_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0006_amber/fixedbb_2kdm_GB77_output_2kdm_0006_energy_summary.txt,2kdm_0006: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0003_amber/fixedbb_2kdm_GB77_output_2kdm_0003_energy_summary.txt,2kdm_0003: 1.5515E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0003_amber/fixedbb_2kdm_GB77_output_2kdm_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0008_amber/fixedbb_2kdm_GB77_output_2kdm_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0008_amber/fixedbb_2kdm_GB77_output_2kdm_0008_energy_summary.txt,2kdm_0008: 2.2629E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_amber/fixedbb_2kdm_GB77_output_2kdm_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_amber/fixedbb_2kdm_GB77_output_2kdm_energy_summary.txt,2kdm: 3.1392E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0010_amber/fixedbb_2kdm_GB77_output_2kdm_0010_energy_summary.txt,2kdm_0010: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0010_amber/fixedbb_2kdm_GB77_output_2kdm_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0002_amber/fixedbb_2kdm_GB77_output_2kdm_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0002_amber/fixedbb_2kdm_GB77_output_2kdm_0002_energy_summary.txt,2kdm_0002: 2.2629E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0004_amber/fixedbb_2kdm_GB77_output_2kdm_0004_energy_summary.txt,2kdm_0004: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0004_amber/fixedbb_2kdm_GB77_output_2kdm_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0009_amber/fixedbb_2kdm_GB77_output_2kdm_0009_energy_summary.txt,2kdm_0009: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0009_amber/fixedbb_2kdm_GB77_output_2kdm_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0007_amber/fixedbb_2kdm_GB77_output_2kdm_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB77_output/fixedbb_2kdm_GB77_output_2kdm_0007_amber/fixedbb_2kdm_GB77_output_2kdm_0007_energy_summary.txt,2kdm_0007: 2.2797E+02 kcal/mol
+fixedbb_2kdm_GA95_output/GA95.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0006_amber/fixedbb_2kdm_GA95_output_2kdm_0006_energy_summary.txt,2kdm_0006: -2.7687E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0006_amber/fixedbb_2kdm_GA95_output_2kdm_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0009_amber/fixedbb_2kdm_GA95_output_2kdm_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0009_amber/fixedbb_2kdm_GA95_output_2kdm_0009_energy_summary.txt,2kdm_0009: -1.4192E+02 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0007_amber/fixedbb_2kdm_GA95_output_2kdm_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0007_amber/fixedbb_2kdm_GA95_output_2kdm_0007_energy_summary.txt,2kdm_0007: -7.0537E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0008_amber/fixedbb_2kdm_GA95_output_2kdm_0008_energy_summary.txt,2kdm_0008: -4.1981E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0008_amber/fixedbb_2kdm_GA95_output_2kdm_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0002_amber/fixedbb_2kdm_GA95_output_2kdm_0002_energy_summary.txt,2kdm_0002: -4.5768E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0002_amber/fixedbb_2kdm_GA95_output_2kdm_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0004_amber/fixedbb_2kdm_GA95_output_2kdm_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0004_amber/fixedbb_2kdm_GA95_output_2kdm_0004_energy_summary.txt,2kdm_0004: -1.2889E+02 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_amber/fixedbb_2kdm_GA95_output_2kdm_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_amber/fixedbb_2kdm_GA95_output_2kdm_energy_summary.txt,2kdm: 3.1392E+02 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0003_amber/fixedbb_2kdm_GA95_output_2kdm_0003_energy_summary.txt,2kdm_0003: -6.0099E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0003_amber/fixedbb_2kdm_GA95_output_2kdm_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0001_amber/fixedbb_2kdm_GA95_output_2kdm_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0001_amber/fixedbb_2kdm_GA95_output_2kdm_0001_energy_summary.txt,2kdm_0001: -4.4958E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0005_amber/fixedbb_2kdm_GA95_output_2kdm_0005_energy_summary.txt,2kdm_0005: -3.8968E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0005_amber/fixedbb_2kdm_GA95_output_2kdm_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0010_amber/fixedbb_2kdm_GA95_output_2kdm_0010_energy_summary.txt,2kdm_0010: -6.9351E+01 kcal/mol
+fixedbb_2kdm_GA95_output/fixedbb_2kdm_GA95_output_2kdm_0010_amber/fixedbb_2kdm_GA95_output_2kdm_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/GA77.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0008_amber/fixedbb_2kdm_GA77_output_2kdm_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0008_amber/fixedbb_2kdm_GA77_output_2kdm_0008_energy_summary.txt,2kdm_0008: 2.8731E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0001_amber/fixedbb_2kdm_GA77_output_2kdm_0001_energy_summary.txt,2kdm_0001: -7.1839E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0001_amber/fixedbb_2kdm_GA77_output_2kdm_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0010_amber/fixedbb_2kdm_GA77_output_2kdm_0010_energy_summary.txt,2kdm_0010: -1.9435E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0010_amber/fixedbb_2kdm_GA77_output_2kdm_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0005_amber/fixedbb_2kdm_GA77_output_2kdm_0005_energy_summary.txt,2kdm_0005: -7.1839E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0005_amber/fixedbb_2kdm_GA77_output_2kdm_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0002_amber/fixedbb_2kdm_GA77_output_2kdm_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0002_amber/fixedbb_2kdm_GA77_output_2kdm_0002_energy_summary.txt,2kdm_0002: 1.8120E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_amber/fixedbb_2kdm_GA77_output_2kdm_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_amber/fixedbb_2kdm_GA77_output_2kdm_energy_summary.txt,2kdm: 3.1392E+02 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0006_amber/fixedbb_2kdm_GA77_output_2kdm_0006_energy_summary.txt,2kdm_0006: -1.6298E+00 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0006_amber/fixedbb_2kdm_GA77_output_2kdm_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0009_amber/fixedbb_2kdm_GA77_output_2kdm_0009_energy_summary.txt,2kdm_0009: 3.1205E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0009_amber/fixedbb_2kdm_GA77_output_2kdm_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0004_amber/fixedbb_2kdm_GA77_output_2kdm_0004_energy_summary.txt,2kdm_0004: -7.4266E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0004_amber/fixedbb_2kdm_GA77_output_2kdm_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0003_amber/fixedbb_2kdm_GA77_output_2kdm_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0003_amber/fixedbb_2kdm_GA77_output_2kdm_0003_energy_summary.txt,2kdm_0003: -1.1887E+01 kcal/mol
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0007_amber/fixedbb_2kdm_GA77_output_2kdm_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GA77_output/fixedbb_2kdm_GA77_output_2kdm_0007_amber/fixedbb_2kdm_GA77_output_2kdm_0007_energy_summary.txt,2kdm_0007: 2.8731E+01 kcal/mol
+fixedbb_2kdm_GB95_output/GB95.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0002_amber/fixedbb_2kdm_GB95_output_2kdm_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0002_amber/fixedbb_2kdm_GB95_output_2kdm_0002_energy_summary.txt,2kdm_0002: -4.6419E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0001_amber/fixedbb_2kdm_GB95_output_2kdm_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0001_amber/fixedbb_2kdm_GB95_output_2kdm_0001_energy_summary.txt,2kdm_0001: -5.6435E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0003_amber/fixedbb_2kdm_GB95_output_2kdm_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0003_amber/fixedbb_2kdm_GB95_output_2kdm_0003_energy_summary.txt,2kdm_0003: -9.5868E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0009_amber/fixedbb_2kdm_GB95_output_2kdm_0009_energy_summary.txt,2kdm_0009: -6.7625E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0009_amber/fixedbb_2kdm_GB95_output_2kdm_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0007_amber/fixedbb_2kdm_GB95_output_2kdm_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0007_amber/fixedbb_2kdm_GB95_output_2kdm_0007_energy_summary.txt,2kdm_0007: -6.7625E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0005_amber/fixedbb_2kdm_GB95_output_2kdm_0005_energy_summary.txt,2kdm_0005: -4.6419E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0005_amber/fixedbb_2kdm_GB95_output_2kdm_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_amber/fixedbb_2kdm_GB95_output_2kdm_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_amber/fixedbb_2kdm_GB95_output_2kdm_energy_summary.txt,2kdm: 3.1392E+02 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0010_amber/fixedbb_2kdm_GB95_output_2kdm_0010_energy_summary.txt,2kdm_0010: -6.7582E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0010_amber/fixedbb_2kdm_GB95_output_2kdm_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0004_amber/fixedbb_2kdm_GB95_output_2kdm_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0004_amber/fixedbb_2kdm_GB95_output_2kdm_0004_energy_summary.txt,2kdm_0004: -6.7582E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0008_amber/fixedbb_2kdm_GB95_output_2kdm_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0008_amber/fixedbb_2kdm_GB95_output_2kdm_0008_energy_summary.txt,2kdm_0008: -6.6605E+01 kcal/mol
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0006_amber/fixedbb_2kdm_GB95_output_2kdm_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdm_GB95_output/fixedbb_2kdm_GB95_output_2kdm_0006_amber/fixedbb_2kdm_GB95_output_2kdm_0006_energy_summary.txt,2kdm_0006: -6.7582E+01 kcal/mol
+resfiles/GB95.txt,NATRO  # Keep all other residues fixed
+resfiles/GA77.txt,NATRO  # Keep all other residues fixed
+resfiles/GB77.txt,NATRO  # Keep all other residues fixed
+resfiles/GA95.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdl_GB95_output/GB95.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0010_amber/fixedbb_2kdl_GB95_output_2kdl_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0010_amber/fixedbb_2kdl_GB95_output_2kdl_0010_energy_summary.txt,2kdl_0010: 4.3540E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0004_amber/fixedbb_2kdl_GB95_output_2kdl_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0004_amber/fixedbb_2kdl_GB95_output_2kdl_0004_energy_summary.txt,2kdl_0004: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0001_amber/fixedbb_2kdl_GB95_output_2kdl_0001_energy_summary.txt,2kdl_0001: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0001_amber/fixedbb_2kdl_GB95_output_2kdl_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_amber/fixedbb_2kdl_GB95_output_2kdl_energy_summary.txt,2kdl: 1.1773E+03 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_amber/fixedbb_2kdl_GB95_output_2kdl_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0007_amber/fixedbb_2kdl_GB95_output_2kdl_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0007_amber/fixedbb_2kdl_GB95_output_2kdl_0007_energy_summary.txt,2kdl_0007: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0003_amber/fixedbb_2kdl_GB95_output_2kdl_0003_energy_summary.txt,2kdl_0003: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0003_amber/fixedbb_2kdl_GB95_output_2kdl_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0005_amber/fixedbb_2kdl_GB95_output_2kdl_0005_energy_summary.txt,2kdl_0005: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0005_amber/fixedbb_2kdl_GB95_output_2kdl_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0008_amber/fixedbb_2kdl_GB95_output_2kdl_0008_energy_summary.txt,2kdl_0008: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0008_amber/fixedbb_2kdl_GB95_output_2kdl_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0009_amber/fixedbb_2kdl_GB95_output_2kdl_0009_energy_summary.txt,2kdl_0009: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0009_amber/fixedbb_2kdl_GB95_output_2kdl_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0006_amber/fixedbb_2kdl_GB95_output_2kdl_0006_energy_summary.txt,2kdl_0006: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0006_amber/fixedbb_2kdl_GB95_output_2kdl_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0002_amber/fixedbb_2kdl_GB95_output_2kdl_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB95_output/fixedbb_2kdl_GB95_output_2kdl_0002_amber/fixedbb_2kdl_GB95_output_2kdl_0002_energy_summary.txt,2kdl_0002: 4.4780E+02 kcal/mol
+fixedbb_2kdl_GB77_output/GB77.txt,NATRO  # Keep all other residues fixed
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0004_amber/fixedbb_2kdl_GB77_output_2kdl_0004_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0004_amber/fixedbb_2kdl_GB77_output_2kdl_0004_energy_summary.txt,2kdl_0004: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0001_amber/fixedbb_2kdl_GB77_output_2kdl_0001_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0001_amber/fixedbb_2kdl_GB77_output_2kdl_0001_energy_summary.txt,2kdl_0001: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_amber/fixedbb_2kdl_GB77_output_2kdl_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_amber/fixedbb_2kdl_GB77_output_2kdl_energy_summary.txt,2kdl: 1.1773E+03 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0007_amber/fixedbb_2kdl_GB77_output_2kdl_0007_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0007_amber/fixedbb_2kdl_GB77_output_2kdl_0007_energy_summary.txt,2kdl_0007: 4.8300E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0009_amber/fixedbb_2kdl_GB77_output_2kdl_0009_energy_summary.txt,2kdl_0009: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0009_amber/fixedbb_2kdl_GB77_output_2kdl_0009_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0002_amber/fixedbb_2kdl_GB77_output_2kdl_0002_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0002_amber/fixedbb_2kdl_GB77_output_2kdl_0002_energy_summary.txt,2kdl_0002: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0006_amber/fixedbb_2kdl_GB77_output_2kdl_0006_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0006_amber/fixedbb_2kdl_GB77_output_2kdl_0006_energy_summary.txt,2kdl_0006: 4.6575E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0008_amber/fixedbb_2kdl_GB77_output_2kdl_0008_energy_summary.txt,2kdl_0008: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0008_amber/fixedbb_2kdl_GB77_output_2kdl_0008_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0005_amber/fixedbb_2kdl_GB77_output_2kdl_0005_energy_summary.txt,2kdl_0005: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0005_amber/fixedbb_2kdl_GB77_output_2kdl_0005_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0003_amber/fixedbb_2kdl_GB77_output_2kdl_0003_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0003_amber/fixedbb_2kdl_GB77_output_2kdl_0003_energy_summary.txt,2kdl_0003: 4.9017E+02 kcal/mol
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0010_amber/fixedbb_2kdl_GB77_output_2kdl_0010_processed_renum.txt,THR     1    THR     1
+fixedbb_2kdl_GB77_output/fixedbb_2kdl_GB77_output_2kdl_0010_amber/fixedbb_2kdl_GB77_output_2kdl_0010_energy_summary.txt,2kdl_0010: 4.9017E+02 kcal/mol
