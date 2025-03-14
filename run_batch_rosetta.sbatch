@@ -50,6 +50,12 @@ chmod +x run_fixbb_task.sh
 
 # Find all resfiles
 find "$resfiles_dir" -type f -name "*.txt" > all_resfiles.txt
+# Add this test code here
+echo "Testing parallel with a single file:"
+head -n 1 all_resfiles.txt > test_file.txt
+$parallel "$srun echo Processing {}" :::: test_file.txt
+echo "Test completed. If you see no output above, there may be an issue with parallel or srun."
+
 
 # the --exclusive to srun make srun use distinct CPUs for each job step
 # -N1 -n1 allocates a single core to each task
