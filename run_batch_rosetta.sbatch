@@ -1,17 +1,18 @@
-#!/bin/sh
-#SBATCH --job-name=fixedbb_parallel
-#SBATCH --output=slurm-%j.out
-#SBATCH --error=slurm-%j.err
+#!/bin/bash
+#SBATCH --job-name=fixedbb_array
+#SBATCH --output=slurm-%A_%a.out
+#SBATCH --error=slurm-%A_%a.err
 #SBATCH --account=pi-amurugan
 #SBATCH --partition=broadwl
 #SBATCH --time=00:45:00
-#SBATCH --ntasks=8
+#SBATCH --array=1-8%8  # Run 8 tasks, max 8 at a time
+
 echo "SLURM environment check:"
-echo "SLURM_NTASKS: $SLURM_NTASKS"
+echo "SLURM_ARRAY_TASK_ID: $SLURM_ARRAY_TASK_ID"
 echo "Current working directory: $(pwd)"
+
 # Load required modules
 module load rosetta
-module load parallel
 
 # Check input arguments
 if [ $# -ne 2 ]; then
@@ -38,41 +39,31 @@ mkdir -p "$master_output_dir"
 # Create a symbolic link to the input PDB in the master output directory
 ln -s "$input_pdb" "$master_output_dir/$(basename $input_pdb)"
 
-# For a large number of tasks, increase the user process limit
-ulimit -u 10000
-
-# Check if run_fixbb_task.sh exists
-if [ ! -f "run_fixbb_task.sh" ]; then
-    echo "Error: run_fixbb_task.sh not found. Make sure it exists and is executable."
-    exit 1
-fi
+# Find all resfiles
+find "$resfiles_dir" -type f -name "*.txt" > all_resfiles.txt
+total_resfiles=$(wc -l < all_resfiles.txt)
+echo "Found $total_resfiles resfiles to process"
 
 # Make sure the task script is executable
 chmod +x run_fixbb_task.sh
 
-# Find all resfiles
-find "$resfiles_dir" -type f -name "*.txt" > all_resfiles.txt
+# Determine which resfile this task should process
+# Using SLURM_ARRAY_TASK_ID to distribute work
+RESFILES_PER_TASK=$(( (total_resfiles + SLURM_ARRAY_TASK_COUNT - 1) / SLURM_ARRAY_TASK_COUNT ))
+START_INDEX=$(( (SLURM_ARRAY_TASK_ID - 1) * RESFILES_PER_TASK + 1 ))
+END_INDEX=$(( START_INDEX + RESFILES_PER_TASK - 1 ))
 
+echo "This task will process files from index $START_INDEX to $END_INDEX"
 
-# the --exclusive to srun make srun use distinct CPUs for each job step
-# -N1 -n1 allocates a single core to each task
-srun="srun --exclusive -N1 -n1"
-echo "srun variable set"
-# --delay .2 prevents overloading the controlling node
-# -j is the number of tasks parallel runs (set to SLURM_NTASKS)
-# --joblog makes parallel create a log of tasks it has already run
-# --resume lets parallel use the joblog to resume from where it left off
-parallel="parallel --delay .2 -j $SLURM_NTASKS --joblog runtask.log --resume"
-# Add this test code here
-echo "Testing parallel with a single file:"
-head -n 1 all_resfiles.txt > test_file.txt
-$parallel "$srun echo Processing {}" :::: test_file.txt
-echo "Test completed. If you see no output above, there may be an issue with parallel or srun."
-# Add this right after your test
-echo "Testing just parallel without srun:"
-parallel "echo Processing {}" :::: test_file.txt
-# Run parallel for all resfiles, passing the PDB file and output directory
-$parallel "$srun ./run_fixbb_task.sh $input_pdb {} $master_output_dir" :::: all_resfiles.txt
+# Process the assigned portion of resfiles
+for (( i = START_INDEX; i <= END_INDEX && i <= total_resfiles; i++ )); do
+    resfile=$(sed -n "${i}p" all_resfiles.txt)
+    echo "Processing resfile $i: $resfile"
+    
+    # Run fixbb directly with this resfile
+    ./run_fixbb_task.sh "$input_pdb" "$resfile" "$master_output_dir"
+    
+    echo "Completed resfile $i"
+done
 
-
-# Keep all_resfiles.txt and runtask.log for reference and possible resumption
+echo "Task $SLURM_ARRAY_TASK_ID completed"
