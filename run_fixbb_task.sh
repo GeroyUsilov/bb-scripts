@@ -17,7 +17,7 @@ ln -s "$2" "$output_dir/$(basename $2)"
 cd "$output_dir"
 
 # Run the fixbb script with the symlinked files
-../../run_fixbb.sh "$(basename $1)" "$(basename $2)"
+/project2/amurugan/cjrusso/bb-scripts/run_fixbb.sh "$(basename $1)" "$(basename $2)"
 
 # Output some diagnostics
 echo "Processed: $resfile_base on $(hostname) at $(date)"
