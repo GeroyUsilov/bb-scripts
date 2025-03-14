@@ -6,7 +6,9 @@
 #SBATCH --partition=broadwl
 #SBATCH --time=00:45:00
 #SBATCH --ntasks=8
-
+echo "SLURM environment check:"
+echo "SLURM_NTASKS: $SLURM_NTASKS"
+echo "Current working directory: $(pwd)"
 # Load required modules
 module load rosetta
 module load parallel
@@ -55,7 +57,9 @@ echo "Testing parallel with a single file:"
 head -n 1 all_resfiles.txt > test_file.txt
 $parallel "$srun echo Processing {}" :::: test_file.txt
 echo "Test completed. If you see no output above, there may be an issue with parallel or srun."
-
+# Add this right after your test
+echo "Testing just parallel without srun:"
+parallel "echo Processing {}" :::: test_file.txt
 
 # the --exclusive to srun make srun use distinct CPUs for each job step
 # -N1 -n1 allocates a single core to each task
