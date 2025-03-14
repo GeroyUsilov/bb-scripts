@@ -37,7 +37,8 @@ master_output_dir="${dir_base}_results"
 mkdir -p "$master_output_dir"
 
 # Create a symbolic link to the input PDB in the master output directory
-ln -s "$input_pdb" "$master_output_dir/$(basename $input_pdb)"
+# Use -f to force overwrite if the link already exists
+ln -sf "$input_pdb" "$master_output_dir/$(basename $input_pdb)"
 
 # Find all resfiles
 find "$resfiles_dir" -type f -name "*.txt" > all_resfiles.txt
