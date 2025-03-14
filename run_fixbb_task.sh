@@ -15,7 +15,7 @@ ln -s "$2" "$output_dir/$(basename $2)"
 
 # Change to output directory
 cd "$output_dir"
-
+echo "about to run fixedbbsh"
 # Run the fixbb script with the symlinked files
 ../run_fixbb.sh "$(basename $1)" "$(basename $2)"
 

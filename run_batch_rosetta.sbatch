@@ -54,7 +54,7 @@ find "$resfiles_dir" -type f -name "*.txt" > all_resfiles.txt
 # the --exclusive to srun make srun use distinct CPUs for each job step
 # -N1 -n1 allocates a single core to each task
 srun="srun --exclusive -N1 -n1"
-
+echo "srun variable set"
 # --delay .2 prevents overloading the controlling node
 # -j is the number of tasks parallel runs (set to SLURM_NTASKS)
 # --joblog makes parallel create a log of tasks it has already run
