@@ -10,10 +10,15 @@ fi
 # Get the resfile path
 resfile=$(readlink -f "$1")
 
-# Create a unique output directory based on the resfile name
+# Get the output directory based on the resfile name
 resfile_name=$(basename "$resfile" .txt)
 output_dir="combinatoric_results/${resfile_name}_output"
-mkdir -p "$output_dir"
+
+# Check if output directory exists
+if [ ! -d "$output_dir" ]; then
+    echo "Error: Output directory $output_dir does not exist. Please run setup_output_dirs.sh first."
+    exit 1
+fi
 
 # Copy the resfile to the output directory
 cp "$resfile" "$output_dir/"
