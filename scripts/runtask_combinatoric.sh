@@ -10,9 +10,12 @@ fi
 # Get the resfile path
 resfile=$(readlink -f "$1")
 
+# Get script directory for absolute paths
+SCRIPT_DIR=$(dirname $(dirname $(readlink -f "$0")))
+
 # Get the output directory based on the resfile name
 resfile_name=$(basename "$resfile" .txt)
-output_dir="combinatoric_results/${resfile_name}_output"
+output_dir="$SCRIPT_DIR/combinatoric_results/${resfile_name}_output"
 
 # Check if output directory exists
 if [ ! -d "$output_dir" ]; then
@@ -22,9 +25,6 @@ fi
 
 # Copy the resfile to the output directory
 cp "$resfile" "$output_dir/"
-
-# Get script directory for absolute paths
-SCRIPT_DIR=$(dirname $(dirname $(readlink -f "$0")))
 
 # Loop through all PDB files
 for pdb_file in "$SCRIPT_DIR/data/pdb_files"/*.pdb; do
