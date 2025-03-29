@@ -2,7 +2,7 @@
 #SBATCH --job-name=chunk_manager
 #SBATCH --output=chunk_manager_%j.out
 #SBATCH --error=chunk_manager_%j.err
-#SBATCH --time=24:00:00  # Adjust as needed
+#SBATCH --time=35:00:00  # Adjust as needed
 #SBATCH --mem=1G
 
 # Define all ranges
