@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #SBATCH --time=24:00:00
-#SBATCH --array=0-100
+#SBATCH --array=0-16
 #SBATCH --account=pi-amurugan
 #SBATCH --partition=broadwl
 #SBATCH --mem-per-cpu=4G
