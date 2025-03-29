@@ -42,7 +42,7 @@ for pdb_file in "$SCRIPT_DIR/data/pdb_files"/*.pdb; do
     cd "$pdb_dir"
     
     # Run fixbb with the resfile
-    $SCRIPT_DIR/scripts/run_fixbb.sh "$(basename $pdb_file)" "$resfile_name.txt"
+    $SCRIPT_DIR/scripts/run_fixbb.sh "$(basename $pdb_file)" "$output_dir/$resfile_name.txt"
     
     # Return to output directory
     cd ..

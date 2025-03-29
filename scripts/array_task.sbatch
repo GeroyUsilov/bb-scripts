@@ -8,8 +8,11 @@
 #SBATCH --output=combinatoric_results/%a_output/slurm-%A_%a.out
 #SBATCH --error=combinatoric_results/%a_output/slurm-%A_%a.err
 
-# Get the resfile for this array index
-resfile="combinatoric_resfiles/${SLURM_ARRAY_TASK_ID}.txt"
+# Get script directory for absolute paths
+SCRIPT_DIR=$(dirname $(dirname $(readlink -f "$0")))
+
+# Get the resfile for this array index (without leading zeros)
+resfile="$SCRIPT_DIR/combinatoric_resfiles/${SLURM_ARRAY_TASK_ID}.txt"
 
 # Check if resfile exists
 if [ ! -f "$resfile" ]; then
@@ -18,4 +21,4 @@ if [ ! -f "$resfile" ]; then
 fi
 
 # Run the task
-./scripts/runtask_combinatoric.sh "$resfile"
+$SCRIPT_DIR/scripts/runtask_combinatoric.sh "$resfile"
