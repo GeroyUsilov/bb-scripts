@@ -11,7 +11,7 @@ fi
 resfile=$(readlink -f "$1")
 
 # Get script directory for absolute paths
-SCRIPT_DIR=$(dirname $(dirname $(readlink -f "$0")))
+SCRIPT_DIR="$SLURM_SUBMIT_DIR"
 
 # Get the output directory based on the resfile name
 resfile_name=$(basename "$resfile" .txt)
