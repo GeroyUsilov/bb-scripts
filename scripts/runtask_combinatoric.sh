@@ -44,9 +44,6 @@ for pdb_file in "$SCRIPT_DIR/data/pdb_files"/*.pdb; do
     # Run fixbb with the resfile
     $SCRIPT_DIR/scripts/run_fixbb.sh "$(basename $pdb_file)" "$output_dir/$resfile_name.txt"
     
-    # Remove all PDB files after fixbb is done
-    rm *.pdb
-    
     # Return to output directory
     cd ..
 done 
