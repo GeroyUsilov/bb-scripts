@@ -23,6 +23,10 @@ if [ ! -d "$output_dir" ]; then
     exit 1
 fi
 
+# Create scores directory if it doesn't exist
+scores_dir="$SCRIPT_DIR/combinatoric_results/scores"
+mkdir -p "$scores_dir"
+
 # Copy the resfile to the output directory
 cp "$resfile" "$output_dir/"
 
@@ -46,4 +50,22 @@ for pdb_file in "$SCRIPT_DIR/data/pdb_files"/*.pdb; do
     
     # Return to output directory
     cd ..
-done 
+done
+
+# After processing all PDBs, copy score files to scores directory
+for pdb_dir in "$output_dir"/*/; do
+    if [ -d "$pdb_dir" ]; then
+        pdb_name=$(basename "$pdb_dir")
+        # Find and copy score file with new naming format
+        if [ -f "$pdb_dir/score.sc" ]; then
+            cp "$pdb_dir/score.sc" "$scores_dir/${resfile_name}_${pdb_name}_score.sc"
+        fi
+    fi
+done
+
+# Create tar.gz archive of the output directory
+cd "$SCRIPT_DIR/combinatoric_results"
+tar -czf "${resfile_name}_output.tar.gz" "${resfile_name}_output"
+
+# Remove the original output directory
+rm -rf "${resfile_name}_output" 
