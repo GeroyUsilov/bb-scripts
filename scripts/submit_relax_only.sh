@@ -17,7 +17,7 @@ input_dir=$(readlink -f "$1")
 # Extract the base name of the input directory (final subdirectory)
 input_subdir_name=$(basename "$input_dir")
 
-output_dir="$SCRIPT_DIR/results/relax_only/$input_subdir_name"  # Default output dir if not specified
+output_dir="$SLURM_SUBMIT_DIR/results/relax_only/$input_subdir_name"  # Default output dir if not specified
 
 # Create job name based on input directory
 dir_base=$(basename "$input_dir")
