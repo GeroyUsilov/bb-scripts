@@ -43,5 +43,5 @@ SCRIPT_DIR=$(dirname $(readlink -f "$0"))
 $SCRIPT_DIR/run_fixbb.sh "$(basename $input_pdb)" "$(basename $resfile)"
 
 # Move output files to the output directory
-mv ../../slurm-$SLURM_JOB_ID.out ./${job_name}.out
-mv ../../slurm-$SLURM_JOB_ID.err ./${job_name}.err
+mv ../../../slurm-$SLURM_JOB_ID.out ./${job_name}.out
+mv ../../../slurm-$SLURM_JOB_ID.err ./${job_name}.err
