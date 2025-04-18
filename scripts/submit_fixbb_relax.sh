@@ -39,7 +39,7 @@ ln -s "$resfile" "$output_dir/$(basename $resfile)"
 cd "$output_dir"
 
 # Run the fixbb script with the symlinked files
-SCRIPT_DIR="${SLURM_SUBMIT_DIR}"
+SCRIPT_DIR="${SLURM_SUBMIT_DIR}"/scripts
 $SCRIPT_DIR/run_fixbb_relax.sh "$(basename $input_pdb)" "$(basename $resfile)"
 
 # Move output files to the output directory
