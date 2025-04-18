@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=fixedbb
-#SBATCH --output=slurm-%j.out
-#SBATCH --error=slurm-%j.err
+#SBATCH --output=slurm.out
+#SBATCH --error=slurm.err
 #SBATCH --account=pi-amurugan
 #SBATCH --partition=broadwl
 #SBATCH --time=00:45:00
@@ -40,8 +40,8 @@ cd "$output_dir"
 
 # Run the fixbb script with the symlinked files
 SCRIPT_DIR=$(dirname $(readlink -f "$0"))
-$SCRIPT_DIR/run_fixbb.sh "$(basename $input_pdb)" "$(basename $resfile)"
+$SCRIPT_DIR/run_fixbb_relax.sh "$(basename $input_pdb)" "$(basename $resfile)"
 
 # Move output files to the output directory
 mv ../../slurm-$SLURM_JOB_ID.out ./${job_name}.out
-mv ../../slurm-$SLURM_JOB_ID.err ./${job_name}.err
+mv ../../slurm-$sSLURM_JOB_ID.err ./${job_name}.err
