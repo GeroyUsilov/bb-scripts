@@ -44,4 +44,4 @@ $SCRIPT_DIR/run_fixbb_relax.sh "$(basename $input_pdb)" "$(basename $resfile)"
 
 # Move output files to the output directory
 mv ../../slurm-$SLURM_JOB_ID.out ./${job_name}.out
-mv ../../slurm-$sSLURM_JOB_ID.err ./${job_name}.err
+mv ../../slurm-$SLURM_JOB_ID.err ./${job_name}.err
