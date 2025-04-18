@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=fixedbb
-#SBATCH --output=slurm.out
-#SBATCH --error=slurm.err
+#SBATCH --output=%j.out
+#SBATCH --error=%j.err
 #SBATCH --account=pi-amurugan
 #SBATCH --partition=broadwl
 #SBATCH --time=00:45:00
