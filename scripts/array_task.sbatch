@@ -21,4 +21,4 @@ if [ ! -f "$resfile" ]; then
 fi
 
 # Run the task with absolute paths
-$SCRIPT_DIR/scripts/runtask_combinatoric.sh "$resfile"
+$SCRIPT_DIR/scripts/runtask_combinatoric_1pdb.sh "$resfile" "2fs1.pdb"

@@ -52,7 +52,7 @@ for model in "$input_folder"/*.pdb; do
         if [ -f "$relaxed_model" ]; then
             # Extract model ID, score, and RMSD
             model_id=$(basename "$model" .pdb)
-            score=$(grep "^score" "$relaxed_model" | head -1 | awk '{print $2}')
+            score=$(grep "^pose" output_model.pdb | awk '{print $(NF-1)}')
             rmsd=$(grep "^REMARK" "$relaxed_model" | grep "rms" | awk '{print $NF}')
             
             # Add to scores file
