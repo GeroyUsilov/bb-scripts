@@ -29,7 +29,7 @@ tar -xzf "$tarfile" -C "$base_dir"
 rm "$tarfile"
 
 # Loop through all directories in the extracted contents
-for dir in "$extract_dir"/*/ ; do
+for dir in "$extract_dir"/* ; do
     if [ -d "$dir" ]; then
         echo "Processing directory: $dir"
         # Run the relax script on each directory
