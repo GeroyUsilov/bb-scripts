@@ -2,11 +2,11 @@
 
 # Input parameters: folder with models and optional output folder
 input_folder=$1
-output_folder=${2:-"relaxed_models"}  # Default output folder if not specified
+output_folder="${input_folder}_relax"  # Append _relax to input folder name
 
 if [ -z "$input_folder" ]; then
-    echo "Usage: $0 <input_folder> [output_folder]"
-    echo "Example: $0 fixbb_models relaxed_models"
+    echo "Usage: $0 <input_folder>"
+    echo "Example: $0 fixbb_models"
     exit 1
 fi
 
@@ -64,3 +64,17 @@ for model in "$input_folder"/*.pdb; do
 done
 
 echo "Analysis complete. Results in $output_folder/relaxed_scores.tsv"
+
+# Compress both folders using tar and gzip
+echo "Compressing input and output folders..."
+tar -czf "${input_folder}.tar.gz" "$input_folder"
+tar -czf "${output_folder}.tar.gz" "$output_folder"
+
+# Remove original folders after successful compression
+if [ $? -eq 0 ]; then
+    rm -rf "$input_folder" "$output_folder"
+    echo "Compressed folders created: ${input_folder}.tar.gz and ${output_folder}.tar.gz"
+    echo "Original folders removed."
+else
+    echo "Error during compression. Original folders retained."
+fi
