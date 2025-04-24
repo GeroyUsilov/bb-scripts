@@ -69,7 +69,7 @@ submit_chunk() {
     for i in $(seq $start_idx $end_idx); do
         range=${ranges[$i]}
         echo "Submitting job with array range: $range"
-        sbatch --array=$range scripts/array_task.sbatch
+        sbatch --array=$range scripts/array_task_relax.sbatch
     done
     
     # Save the next chunk number
