@@ -1,4 +1,14 @@
-#!/bin/bash
+#!/bin/sh
+
+#SBATCH --time=24:00:00
+#SBATCH --array=0-63
+#SBATCH --account=pi-amurugan
+#SBATCH --partition=broadwl
+#SBATCH --mem-per-cpu=4G
+#SBATCH --output=slurm-%A_%a.out
+#SBATCH --error=slurm-%A_%a.err
+
+
 
 # Output CSV file
 output_csv="relax_results.csv"
@@ -8,7 +18,7 @@ output_csv="relax_results.csv"
 y_range=("1pga" "2fs1" "2jws" "2jwu" "2kdl" "2kdm")
 z_range=("0001" "0002" "0003" "0004" "0005" "0006" "0007" "0008" "0009" "0010")
 
-for ((x=5132; x<=8191; x++)); do
+for ((x=${SLURM_ARRAY_TASK_ID}*128; x<=${SLURM_ARRAY_TASK_ID}*128 + 127; x++)); do
   for y in "${y_range[@]}"; do
     for z in "${z_range[@]}"; do
       # Execute command and capture result
