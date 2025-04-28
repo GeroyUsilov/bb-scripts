@@ -12,7 +12,7 @@ for ((x=0; x<=8191; x++)); do
   for y in "${y_range[@]}"; do
     for z in "${z_range[@]}"; do
       # Execute command and capture result
-      result=$(tar -xzOf combinatoric_results/${x}_output/${y}_relax.tar.gz project/amurugan/cjrusso/bb-scripts/combinatoric_results/${x}_output/${y}_relax/2fs1_${z}_0001.pdb | grep "^pose" | awk '{print $NF}' 2>/dev/null)
+      result=$(tar -xzOf combinatoric_results/${x}_output/${y}_relax.tar.gz project/amurugan/cjrusso/bb-scripts/combinatoric_results/${x}_output/${y}_relax/${y}_${z}_0001.pdb | grep "^pose" | awk '{print $NF}' 2>/dev/null)
       
       # Only write to CSV if command succeeded and result is not empty
       if [ $? -eq 0 ] && [ ! -z "$result" ]; then
