@@ -8,7 +8,7 @@ echo "x,y,z,result" > $output_csv
 y_range=("1pga" "2fs1" "2jws" "2jwu" "2kdl" "2kdm")
 z_range=("0001" "0002" "0003" "0004" "0005" "0006" "0007" "0008" "0009" "0010")
 
-for ((x=0; x<=8191; x++)); do
+for ((x=5132; x<=8191; x++)); do
   for y in "${y_range[@]}"; do
     for z in "${z_range[@]}"; do
       # Execute command and capture result
