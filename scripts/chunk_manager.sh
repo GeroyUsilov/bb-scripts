@@ -6,7 +6,7 @@
 #SBATCH --mem=1G
 
 # Define all ranges
-ranges=("0-63" "64-127" "128-191" "192-255" "256-319" "320-383" "384-447" "8128-8192" )
+ranges=("0-0" )
 
 
 # Create a temporary file to store chunk information
@@ -69,7 +69,7 @@ submit_chunk() {
     for i in $(seq $start_idx $end_idx); do
         range=${ranges[$i]}
         echo "Submitting job with array range: $range"
-        sbatch --array=$range scripts/array_task_relax.sbatch
+        sbatch --array=$range scripts/array_task.sbatch
     done
     
     # Save the next chunk number
